@@ -1,0 +1,81 @@
+@import "reset.css";
+
+body{
+    background-color: #b3cee9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.Canvas{
+    background-color: #f8f8f8;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 0);
+}
+
+.controls {
+    margin-top : 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls .controls__btns{
+    margin-bottom: 20px;
+}
+
+.controls__btns button{
+    all: unset;
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+    padding: 5px 10px;
+    margin: 0px 15px;
+    width: 80px;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 1);
+    border: 3px solid rgba(0, 0, 0, 0);
+    color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.controls__btns button:last-child{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.controls__btns button:hover{
+    transform: scale(1.1);
+}
+
+.controls .controls__colors {
+    display: flex;
+    
+}
+.controls__colors .controls__color {
+    width: 50px;
+    height: 50px;
+    border-radius:25px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 0);
+    margin: 10px 5px;
+    cursor : pointer;
+}
+
+.controls__colors .controls__color:hover{
+    transform: scale(1.1);
+}
+
+.controls .controls__range{
+    margin-bottom:20px;
+    display: flex;
+}
+
+#jsRange{
+    width: 300px;
+}
